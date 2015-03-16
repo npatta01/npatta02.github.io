@@ -3,17 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Yet Another Blog</title>
+  <title>Loading a class in python dynamically | Yet Another Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A repository for ideas and things that I found helpful">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yet Another Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2015/03/index.html">
+  <meta name="description" content="I recently needed to create an object of a python class given the name of the class and module.
+Below is an example of the code in python 2.7 and above.
+Lets say we want to load this class module.
+
+Be">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Loading a class in python dynamically">
+<meta property="og:url" content="http://yoursite.com/2015/03/15/python-loading-dynamic-class/index.html">
 <meta property="og:site_name" content="Yet Another Blog">
-<meta property="og:description" content="A repository for ideas and things that I found helpful">
+<meta property="og:description" content="I recently needed to create an object of a python class given the name of the class and module.
+Below is an example of the code in python 2.7 and above.
+Lets say we want to load this class module.
+
+Be">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yet Another Blog">
-<meta name="twitter:description" content="A repository for ideas and things that I found helpful">
+<meta name="twitter:title" content="Loading a class in python dynamically">
+<meta name="twitter:description" content="I recently needed to create an object of a python class given the name of the class and module.
+Below is an example of the code in python 2.7 and above.
+Lets say we want to load this class module.
+
+Be">
   
     <link rel="alternative" href="/atom.xml" title="Yet Another Blog" type="application/atom+xml">
   
@@ -76,58 +88,70 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/03/15/python-loading-dynamic-class/" class="archive-article-date">
-  <time datetime="2015-03-16T01:49:00.000Z" itemprop="datePublished">Mar 15</time>
+        <section id="main"><article id="post-python-loading-dynamic-class" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/15/python-loading-dynamic-class/" class="article-date">
+  <time datetime="2015-03-16T01:49:00.000Z" itemprop="datePublished">2015-03-15</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/15/python-loading-dynamic-class/">Loading a class in python dynamically</a>
+    <h1 class="article-title" itemprop="name">
+      Loading a class in python dynamically
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/03/09/first-post/" class="archive-article-date">
-  <time datetime="2015-03-09T17:30:02.000Z" itemprop="datePublished">Mar 9</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/09/first-post/">First Post</a>
-    </h1>
-  
+        <p>I recently needed to create an object of a python class given the name of the class and module.</p>
+<p>Below is an example of the code in python 2.7 and above.</p>
+<p>Lets say we want to load this class module.</p>
+<script src="//gist.github.com/89a26cbcca3b378f6894.js?file=cat.py"></script>
+<p>Below is a snippet that creates an instance of Cat class and Brown cat and call its methods.</p>
+<script src="//gist.github.com/89a26cbcca3b378f6894.js?file=main_file.py"></script>
+<p>Line 13 loads the module using <a href="https://docs.python.org/2/library/importlib.html" target="_blank" rel="external">importlib.import_module(module_name)</a> </p>
+<p>Line 15, loads the class object using <a href="https://docs.python.org/2/library/functions.html#getattr" target="_blank" rel="external">getattr(module_object, class_name)</a></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/03/15/python-loading-dynamic-class/" data-id="ci7b8g07t0003mslvimkhnvb7" class="article-share-link">Share</a>
+      
+        <a href="http://yoursite.com/2015/03/15/python-loading-dynamic-class/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/03/09/first-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">First Post</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -204,11 +228,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'npatta01-blog';
   
+  var disqus_url = 'http://yoursite.com/2015/03/15/python-loading-dynamic-class/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
